@@ -1,10 +1,26 @@
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      projeto
-    </div>
-  );
-}
+// components
+import {Countries} from "./pages/Countries/Countries"
 
-export default App;
+const  App = () =>  {
+
+
+
+    return (
+      <div >
+
+          <Countries/>
+
+      </div>
+    );
+  }
+
+
+  
+
+  export default App;
+
+
+
+  
