@@ -13,10 +13,15 @@ export const getCoutries = () => {
     Country {
       name
       capital
+      area
+      population
       flag {
         emoji
         emojiUnicode
         svgFile
+      }
+      topLevelDomains {
+        name
       }
     }
   }

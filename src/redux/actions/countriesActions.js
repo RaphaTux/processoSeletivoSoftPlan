@@ -9,5 +9,12 @@ export const setCountries = value => ({
   allCountries: value
 });
 
+export const setSelectedCountry = value => ({
+
+  type: COUNTRIES_TYPES.COUTRY_SET_SELECTED_COUNTRY,
+  selectedCountry: value
+});
+
+
 
 

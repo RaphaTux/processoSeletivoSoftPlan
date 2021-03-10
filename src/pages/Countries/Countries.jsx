@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 //Thunks 
@@ -13,7 +13,6 @@ import {CountryItem} from "./Components/CountryItem/CountryItem"
 export const  Countries = () =>  {
 
   const countryList = useSelector((state) => state.CountriesReducer.countryList);
-
   const dispatch = useDispatch()
 
     useEffect(()=>{

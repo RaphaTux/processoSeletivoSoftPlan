@@ -5,7 +5,8 @@ import {COUNTRIES_TYPES} from "../actionTypes"
 
 
 const initialState = {
-  countryList: null
+  countryList: null,
+  selectedCountry:null
 };
 export const countriesReducer = (state = initialState, action) => {
 
@@ -17,6 +18,11 @@ export const countriesReducer = (state = initialState, action) => {
       return {
         ...state,
         countryList: payload
+      };
+      case COUNTRIES_TYPES.COUTRY_SET_SELECTED_COUNTRY:
+      return {
+        ...state,
+        selectedCountry: payload
       };
     default:
       return state;
