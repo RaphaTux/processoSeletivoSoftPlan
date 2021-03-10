@@ -3,7 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// redux
 import { Provider } from 'react-redux'
+
+// routes
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+
+// pages
+import {Countries} from "./pages/Countries/Countries"
+import {CountryDetails} from "./pages/CountryDetails/CountryDetails" 
+
 
 // Provider
 import {store} from "./redux/store" 
@@ -11,8 +22,14 @@ import {store} from "./redux/store"
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
-    </Provider>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact={true} component={App} />
+      <Route path="/countries" exact={true} component={Countries} />
+      <Route path="/countries/details" exact={true} component={CountryDetails} />
+    </Switch>
+  </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

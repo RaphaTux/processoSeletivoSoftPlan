@@ -9,14 +9,8 @@ export const CountryDetails = (props)=>{
 
   return(
     <div id={key} class="country-detail">
-          <div className="country-detail__country-image">
-            <img src={country.flag.svgFile} alt=""/>
-            </div>
-          <div className="country-detail__name-capital">
-            <div>{`Nome: ${country.name}`}</div>
-            <div>{`Capital: ${country.capital}`}</div>
-          </div>
-         </div>
+        country details 
+    </div>
 
 
   )
