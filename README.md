@@ -8,3 +8,6 @@ O projeto foi criado com [Create React App](https://github.com/facebook/create-r
 * React-router para navegação.
 * @testing-library/react para os testes.
 
+## O Deploy foi feito no heroku 
+* https://countriesaroundworld.herokuapp.com
+
