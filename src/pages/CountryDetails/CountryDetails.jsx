@@ -15,9 +15,6 @@ export const CountryDetails = ()=>{
 
 
   const selectCountry = useSelector((state)=>state.CountriesReducer.selectedCountry);
-  console.log(selectCountry)
-
-  
 
   if(!(checkExists(selectCountry))) return null;
 

@@ -2,22 +2,41 @@
 
 
   width: 100%;
+  height: 100%;
 
-  background-color: blueviolet;
+  background-attachment: fixed;
 
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content: center;
 
+  margin-bottom: 100px;
+
   &__container{
-    background-color: aqua;
+
+    padding: 10px;
 
     width: 50%;
 
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     justify-content: center;
+
+    margin-bottom: 100px;
+
+  }
+
+  &__find-country{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    background-color: chocolate;
 
   }
 }

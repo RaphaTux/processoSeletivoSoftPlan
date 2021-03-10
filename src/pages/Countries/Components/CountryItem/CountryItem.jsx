@@ -26,7 +26,7 @@ export const CountryItem = (props)=>{
 
 
   return(
-    <div id={key} class="country-item" onClick={()=>handleSelectCountry(country)}>
+    <div id={key} className="country-item" onClick={()=>handleSelectCountry(country)}>
           <div className="country-item__country-image">
             <img src={country.flag.svgFile} alt=""/>
             </div>
